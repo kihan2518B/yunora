@@ -188,119 +188,111 @@ const CollectionSection = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const collections = [
     {
-      name: "CHAIR",
+      name: "Mattress",
       image:
-        "https://images.unsplash.com/photo-1760716478125-aa948e99ef85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjaGFpciUyMGZ1cm5pdHVyZXxlbnwxfHx8fDE3NjUyNjUyMzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "Accura Mattress.jpg",
     },
     {
-      name: "TABLE",
+      name: "BED SHEET",
       image:
-        "https://images.unsplash.com/photo-1758977404683-d04c315a005b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0YWJsZSUyMGZ1cm5pdHVyZXxlbnwxfHx8fDE3NjUyODU1MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "/Bed Sheet.jpg",
     },
     {
-      name: "BOOKSHELF",
+      name: "Cushions",
       image:
-        "https://images.unsplash.com/photo-1576325781808-58584d4f505c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib29rc2hlbGYlMjBtaW5pbWFsfGVufDF8fHx8MTc2NTI4NzEyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "/YunoraCushions.jpg",
     },
     {
-      name: "SOFA",
+      name: "curtains",
       image:
-        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzb2ZhfGVufDF8fHx8MTc2NTM1MDczNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "/White Curtains.jpg",
     },
     {
-      name: "LAMP",
+      name: "Cushion Cover",
       image:
-        "https://images.unsplash.com/photo-1667312939978-64cf31718a6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsYW1wfGVufDF8fHx8MTc2NTMzMDY3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "/Designer Cushion Cover.jpg",
     },
   ];
   const products = [
     {
       id: 1,
-      name: "Easy Sofa",
+      name: "Yunora Cushions",
       price: 66.0,
-      category: "SOFA",
+      category: "Cushions",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop",
+        "/YunoraCushions.jpg",
     },
     {
       id: 2,
-      name: "Easy Sofa",
+      name: "Orange Cushion Cover",
       price: 126.0,
-      category: "SOFA",
+      category: "Cushion Cover",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop",
+        "/Orange Cushion Cover.png",
     },
     {
       id: 3,
-      name: "Cabinet",
+      name: "Accura Mattress",
       price: 138.0,
-      category: "BOOKSHELF",
+      category: "Mattress",
       image:
-        "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=400&h=400&fit=crop",
+        "/Accura Mattress.jpg",
     },
     {
       id: 4,
-      name: "Rumpt Chair",
+      name: "White Curtains",
       price: 100.0,
-      category: "CHAIR",
+      category: "curtains",
       image:
-        "https://images.unsplash.com/photo-1503602642458-232111445657?w=400&h=400&fit=crop",
+        "/White Curtains.jpg",
     },
     {
       id: 5,
-      name: "Romp Toil",
+      name: "Red Curtains",
       price: 86.0,
-      category: "CHAIR",
+      category: "curtains",
       image:
-        "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=400&h=400&fit=crop",
+        "/Red Curtains.jpg",
     },
     {
       id: 6,
-      name: "Almirah",
+      name: "Bed Sheet",
       price: 222.0,
-      category: "BOOKSHELF",
+      category: "BED SHEET",
       image:
-        "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400&h=400&fit=crop",
+        "/Bed Sheet.jpg",
     },
     {
       id: 7,
-      name: "Dining Table",
+      name: "Automatic Curtains",
       price: 200.0,
-      category: "TABLE",
+      category: "curtains",
       image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=400&fit=crop",
+        "/Automatic Curtains.jpg",
     },
     {
       id: 8,
-      name: "Floor Lamp",
+      name: "Designer Bed Sheet",
       price: 50.0,
-      category: "LAMP",
+      category: "BED SHEET",
       image:
-        "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&h=400&fit=crop",
+        "/Designer Bed Sheet.jpg",
     },
     {
       id: 9,
-      name: "Modern Chair",
+      name: "Comfortable Cushion Cover",
       price: 120.0,
-      category: "CHAIR",
+      category: "Cushion Cover",
       image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop",
+        "/Comfortable Cushion Cover.jpg",
     },
     {
       id: 11,
-      name: "Bookshelf Unit",
+      name: "Designer Cushion Cover",
       price: 150.0,
-      category: "BOOKSHELF",
+      category: "Cushion Cover",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop",
-    },
-    {
-      id: 12,
-      name: "Coffee Table",
-      price: 80.0,
-      category: "TABLE",
-      image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=400&fit=crop",
+        "/Designer Cushion Cover.jpg",
     },
   ];
   const filteredProducts =
@@ -327,9 +319,7 @@ const CollectionSection = () => {
                 >
                   <div
                     className={`w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden shadow-lg transition-all ease-in-out duration-300 ${
-                      isActive
-                        ? "scale-110"
-                        : "border-4 border-white"
+                      isActive ? "scale-110" : "border-4 border-white"
                     }`}
                   >
                     <img
@@ -340,9 +330,7 @@ const CollectionSection = () => {
                   </div>
                   <span
                     className={`text-xs sm:text-sm tracking-wider transition-colors duration-300 ${
-                      isActive
-                        ? "text-black font-semibold"
-                        : "text-gray-600"
+                      isActive ? "text-black font-semibold" : "text-gray-600"
                     }`}
                   >
                     {item.name}

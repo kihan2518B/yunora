@@ -31,7 +31,7 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Logo & Social */}
             <div>
-              <h3 className="text-2xl mb-6 tracking-tight">MODURA.</h3>
+              <h3 className="text-2xl mb-6 tracking-tight">Yunora.</h3>
               <p className="text-gray-400 mb-6">
                 Design-driven furniture for modern living. Transform your space with timeless pieces.
               </p>
