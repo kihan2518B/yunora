@@ -12,28 +12,21 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#FF784D", // Yunora Orange
-          soft: "#FFF7F3", // soft section background
+          DEFAULT: "hsl(var(--brand))",
+          soft: "hsl(var(--brand-soft))",
         },
-        textPrimary: "#1F2937",
-        textSecondary: "#4B5563",
-        borderLight: "#E5E7EB",
-        background: "#FFFFFF",
+        textPrimary: "hsl(var(--text-primary))",
+        textSecondary: "hsl(var(--text-secondary))",
+        border: "hsl(var(--border))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
       },
       fontFamily: {
         serif: ["'DM Serif Display'", "serif"],
         sans: ["Inter", "system-ui", "sans-serif"],
       },
       borderRadius: {
-        sm: "8px",
-        md: "12px",
-        lg: "16px",
-        xl: "24px",
-        full: "9999px",
-      },
-      boxShadow: {
-        soft: "0 8px 24px rgba(0,0,0,0.06)",
-        hover: "0 16px 40px rgba(0,0,0,0.08)",
+        xl: "var(--radius)",
       },
     },
   },
