@@ -1,9 +1,9 @@
-import { HeroSection } from '@/components/HeroSection';
+import HeroSection from '@/components/HeroSection';
 import { CollectionSection } from '@/components/CollectionSection';
 import { BlogSection } from '@/components/BlogSection';
 import { InspirationSection } from '@/components/InspirationSection';
 import { FAQSection } from '@/components/FAQSection';
-import { Header } from '@/components/Header';
+import Header  from '@/components/Header';
 import { PopularProductsSection } from '@/components/PopularProductsSection';
 import { GeoDeliverySection } from '@/components/GeoDeliverySection';
 import BrandStorySection from '@/components/BrandStorySection';
@@ -22,7 +22,6 @@ export default function App() {
         <GeoDeliverySection/>
         <BrandStorySection />
         <BlogSection />
-        <InspirationSection />
         <FAQSection />
       </main>
       <Footer />

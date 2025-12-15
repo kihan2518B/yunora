@@ -298,7 +298,7 @@ const PopularProductsSection = () => {
         </div>
 
         {/* Minimal Footer */}
-        <div className="mt-32 text-center max-w-3xl mx-auto">
+        {/* <div className="mt-32 text-center max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="w-12 h-px bg-[#FF784D] opacity-30"></div>
             <svg className="w-4 h-4 text-[#FF784D]" viewBox="0 0 24 24" fill="currentColor">
@@ -309,7 +309,7 @@ const PopularProductsSection = () => {
           <p className="text-xs text-gray-400 leading-relaxed tracking-wide font-light">
             Explore our best selling mattresses and popular bedding products, featuring comfortable mattresses and quality bedding products trusted by thousands of satisfied customers.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

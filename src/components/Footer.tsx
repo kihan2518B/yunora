@@ -13,6 +13,7 @@ import {
   ArrowRight,
   ChevronRight
 } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -63,7 +64,7 @@ const Footer = () => {
       <div className="relative z-10">
         <div className="max-w-7xl mx-auto px-6 py-16">
           {/* Top Section - CTA */}
-          <div className="mb-16 pb-16 border-b border-white/10">
+          {/* <div className="mb-16 pb-16 border-b border-white/10">
             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
               <div className="max-w-2xl">
                 <h2 className="text-4xl md:text-5xl font-serif mb-4 leading-tight" style={{ fontFamily: 'Libre Baskerville, serif' }}>
@@ -78,7 +79,7 @@ const Footer = () => {
                 <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
             </div>
-          </div>
+          </div> */}
 
           {/* Links Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -228,11 +229,12 @@ const Footer = () => {
       </div>
 
       {/* Bottom Decorative Section with Scrolling Text */}
-      <div className="relative py-20 overflow-hidden">
+      <div className="relative">
         {/* 3D Chair Image - Left Corner */}
-        <div className="absolute left-8 bottom-0 w-56 h-56 md:w-80 md:h-80 z-30">
-          <img 
-            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" 
+        {/* <div className="absolute left-8 bottom-0 w-56 h-56 md:w-80 md:h-80 z-30">
+          <Image
+          fill 
+            src="/images/premium_sofa.png" 
             alt="Premium Chair"
             className="w-full h-full object-contain drop-shadow-2xl"
             style={{ 
@@ -240,12 +242,12 @@ const Footer = () => {
               transform: 'perspective(1000px) rotateY(-8deg)'
             }}
           />
-        </div>
+        </div> */}
         
         {/* 3D Chair Image - Right Corner */}
-        <div className="absolute right-8 bottom-0 w-56 h-56 md:w-80 md:h-80 z-30">
+        <div className="absolute right-8 bottom-0 w-80 h-80 md:w-96 md:h-96 z-30 rounded-full">
           <img 
-            src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80" 
+            src="/images/premium_sofa.png" 
             alt="Luxury Armchair"
             className="w-full h-full object-contain drop-shadow-2xl"
             style={{ 
